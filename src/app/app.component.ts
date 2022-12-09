@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-recipes';
+
+  loadedFeature = 'recipes';
+
+  onNavigate($event: string) {
+    this.loadedFeature = $event;
+  }
 }
